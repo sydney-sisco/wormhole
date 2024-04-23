@@ -11,11 +11,11 @@ function generateLogarithmicSpiralPoints(a, b, thetaMax, step) {
 }
 
 // Example usage:
-// const a = 1;
-// const b = 0.2;
-// const thetaMax = 4 * Math.PI; // Generates points for two full revolutions
-// const step = 1; // The precision of the spiral
+const a = 1; // controls the starting point of the spiral
+const b = 0.2; // controls the tightness of the spiral
+const thetaMax = 4 * Math.PI; // the maximum angle to which you want to generate points, in radians
+const step = 1; // the angular step between generated points
 
-// const spiralPoints = generateLogarithmicSpiralPoints(a, b, thetaMax, step);
+const spiralPoints = generateLogarithmicSpiralPoints(a, b, thetaMax, step);
 
-// console.log(spiralPoints);
+console.log(spiralPoints);
